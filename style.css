@@ -78,7 +78,7 @@ header .icons .fa-magnifying-glass{
 }
 
 /* Media Info */
-.info{
+body > .info{
     padding: var(--padding);
 }
 
@@ -173,4 +173,46 @@ header .icons .fa-magnifying-glass{
     text-transform: uppercase;
     color: var(--red-color);
     font-size: var(--font-medium);
+}
+
+/* Up Next */
+.UpNext{
+    padding: 0 var(--padding);
+}
+
+.UpNext > .title{
+    font-size: var(--font-medium);
+    color: var(--grey-dark-color);
+    margin-bottom: calc(var(--padding)/2);
+}
+
+.UpNext .item{
+    display: flex;
+    margin-top: var(--padding);
+}
+
+.UpNext .item .img{
+    flex: 1 1 35%;
+    margin-right: var(--padding);
+}
+
+.UpNext .item .img img{
+    width: 100%;
+}
+
+.UpNext .item .info{
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.UpNext .item .moreBtn{
+    flex: 1 1 5%;
+    background-color: white;
+}
+
+.UpNext .item .info .name,
+.UpNext .item .info .views{
+    font-size: var(--font-micro);
+    color: var(--grey-dark-color);
 }
