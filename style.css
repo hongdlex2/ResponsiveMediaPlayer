@@ -74,6 +74,7 @@ header .icons .fa-magnifying-glass{
     width: 100%;
     height: 100%;
     max-width: 1000px;
+    max-height: 400px;
 }
 
 /* Media Info */
@@ -112,4 +113,64 @@ header .icons .fa-magnifying-glass{
 .info .views{
     font-size: var(--font-small);
     color: var(--grey-dark-color);
+}
+
+.actions{
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+
+.info .actions button{
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+.info .actions button i{
+    margin: 0 auto;
+    margin-bottom: calc(var(--padding)/2);
+    font-size: 16px;
+}
+
+.info .actions button i.active{
+    color: var(--blue-color);
+}
+
+/* Channel Description */
+.info .channels{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+.info .channels .metadata{
+    display: flex;
+    align-items: center;
+}
+
+.info .channels .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info .channels .metadata img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+}
+
+.info .channels .metadata .info .subscribers{
+    font-size: var(--font-small);
+    color: var(var(--grey-dark-color));
+}
+
+.info .channels .subscribe{
+    background-color: white;
+    text-transform: uppercase;
+    color: var(--red-color);
+    font-size: var(--font-medium);
 }
